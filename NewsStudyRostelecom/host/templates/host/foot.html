@@ -1,0 +1,56 @@
+{% load static %}
+
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 box_1">
+			<img src="{% static 'host/' %}images/f_logo.png" alt=""/>
+			       <p>© Создан  в 2023 году </p>
+		</div>
+		<div class="col-md-3 box_2">
+			<h4>Основные страницы</h4>
+			<ul class="list_2">
+				<li class="active"><a href="index.html">Главная страница</a></li>
+					<li><a href="about.html">О нас</a></li>
+					<li><a href="service.html">Сервисы</a></li>
+					<li><a href="support.html">Поддержка</a></li>
+					<li><a href="contact.html">Контакты</a></li>
+
+			<div class="clearfix"> </div>
+		</div>
+		<div class="col-md-3 box_2">
+			<h4>Контакты</h4>
+			<address class="address">
+              <dl>
+                 <dt></dt>
+                 <dd>Address : <span>190000 Санкт-Петербург</span></dd>
+                 <dd>E-mail : <a href="mailto@example.com">info@host.com</a></dd>
+                 <dd>Call : <span> +7 812 .. ....</span></dd>
+              </dl>
+           </address>
+		</div>
+		<div class="col-md-3 box_2">
+			<h4>Социальные сети</h4>
+			<ul class="footer_social">
+			  <li><a href="#"><i class="fa fa-vk"></i></a></li> <!--разобраться!-->
+			  <li><a href=""><i class="tw"> </i> </a></li>
+			  <li><a href=""><i class="linkedin"> </i> </a></li>
+			  <li><a href=""><i class="google"> </i> </a></li>
+		   </ul>
+		</div>
+	</div>
+</div>
+<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+							  <script defer src="js/jquery.flexslider.js"></script>
+							  <script type="text/javascript">
+								$(function(){
+								  SyntaxHighlighter.all();
+								});
+								$(window).load(function(){
+								  $('.flexslider').flexslider({
+									animation: "slide",
+									start: function(slider){
+									  $('body').removeClass('loading');
+									}
+								  });
+								});
+							  </script>

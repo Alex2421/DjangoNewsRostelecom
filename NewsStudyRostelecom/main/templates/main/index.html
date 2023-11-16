@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<head>
+    <meta charset="UTF-8">
+    <title> {{ title }}</title>
+    <link rel="stylesheet" href="{%static 'main/css/style.css' %}">
+</head>
+<body>
+      <h1> {{ Header1 }} </h1>
+      {% if value > 0 %}
+          <h3> Переменная больше нуля </h3>
+      {$ else$}
+          <h3> Переменная не больше нуля </h3>
+      {% endif %}
+
+      <li>
+      {% for n in numbers %}
+          <ul>{{ n }}</ul>
+          {% endfor %}
+      </li>
+
+<!--   <h1> Главная страница из шаблона</h1>-->
+<!--     <h3> Заголовок 3</h3>-->
+<!--     <h5> Заголовок 5</h5>-->
+<!--     <p> Параграф </p> -->
+     <a href="about/"> Ссылка </a>
+<!--     <table border="5">-->
+<!--     <th> Ячейка заголовка </th>-->
+<!--         <th> Ячейка заголовка 2 </th>-->
+<!--         <tr>-->
+<!--             <td> Текст ячейки 1</td>-->
+
+<!--         </tr>-->
+<!--     </table>-->
+
+<div class="container">
+     <div class="row">
+      <div class="col-xl-1">
+       <h1> Контейнер 1 </h1>
+        <div class='news 1' >
+           <h2> Новость 1 </h2>
+           <p> Текст новости </p>
+        </div>
+     <div class="col-xl-5">
+      <h1> Контейнер 2 </h1>
+       <div class='news 1' >
+         <h2> Новость 1 </h2>
+         <p> Текст новости </p>
+       </div>
+     </div>
+
+</div>
+
+</body>
+</html>
