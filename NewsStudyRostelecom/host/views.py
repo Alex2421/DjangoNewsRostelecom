@@ -4,3 +4,5 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'host/index.html')
+def about(request):
+    return render(request, 'host/about.html')
