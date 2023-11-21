@@ -2,9 +2,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from host.views import page_not_found
+#from host.views import page_not_found
 #import host.views as host_views
-
+handler404 = 'host.views.not_found_view'
 
 from django.conf import settings
 urlpatterns = [
@@ -19,4 +19,3 @@ urlpatterns = [
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = page_not_found

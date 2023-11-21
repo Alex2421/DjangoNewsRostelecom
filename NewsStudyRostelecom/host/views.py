@@ -16,5 +16,7 @@ def signin(request):
 #def custom_404(request, exception):
 #   return render(request, ‘host/404.html’, status=404)
 
-def page_not_found(request, exception):
-    return HttpResponseNotFound('<h1>Ой, что-то пошло не так. Страница не найдена!</h1>')
+#def page_not_found(request, exception):
+#    return HttpResponseNotFound('<h1>Ой, что-то пошло не так. Страница не найдена!</h1>')
+def not_found_view(request, exception):
+    return render(request, 'host/404.html')
