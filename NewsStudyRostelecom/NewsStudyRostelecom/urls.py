@@ -9,10 +9,11 @@ handler404 = 'host.views.not_found_view'
 from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('main.urls')),
+    #path('',include('main.urls')), #отключил для выгрузки на гит
     path('news/', include('news.urls')),
-#   path('users/', include('users.urls')),
-    path('host/', include('host.urls')),
+    path('users/', include('users.urls')),
+    path('', include('host.urls')),
+    #path('host/', include('host.urls')),
     path('home/', include('home.urls')),
     #htpp://127.0.0.1:8000/
 
