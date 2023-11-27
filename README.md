@@ -47,9 +47,9 @@ $ pip install -r requirements.txt
   4. Создание superuser :
 ```bash
 $ python manage.py createsuperuser
-``` 
-#  Не создаеться сsuperuser:
-   
+```
+```
+#  Не создаеться superuser:  
 Поставь в сеттингах вместо ru-ru en-en, после активации можно поменять.
 ошибка: django.db.utils.OperationalError: no such table: auth_user
 Решение - требуется сделать миграцию в БД ./manage.py migrate. После этого все запускается.
