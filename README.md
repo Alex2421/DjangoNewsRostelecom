@@ -37,13 +37,13 @@ $ source venv/Scripts/activate
 
 # Активация виртуальной среды в Linux/Mac:
 $ source venv/bin/activate
-
+```
   3. Установка и создание requirements.txt пакета в python:
 ```bash
 $ pip install -r requirements.txt
 # создание requirements.txt
  pip freeze > requirements.txt
-` 
+``` 
   4. Создание superuser :
 ```bash
 $ python manage.py createsuperuser
@@ -53,7 +53,7 @@ $ python manage.py createsuperuser
 Поставь в сеттингах вместо ru-ru en-en, после активации можно поменять.
 ошибка: django.db.utils.OperationalError: no such table: auth_user
 Решение - требуется сделать миграцию в БД ./manage.py migrate. После этого все запускается.
-   
+```  
  5. Запуск Django сервера:
 ```bash
 $ python manage.py runserver
